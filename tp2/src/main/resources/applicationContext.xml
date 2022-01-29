@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+<!-- 	<context:annotation-config></context:annotation-config> -->
+
+  <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+
+  <bean id="demandeConge" class="com.ecoalis.model.DemandeConge" scope="prototype">
+  </bean>
+
+  <bean id="collaborateur" class="com.ecoalis.model.Collaborateur" scope="prototype">
+    <property name="nom" value="LY"/>
+    <property name="prenom" value="Ngoc Hung"/>
+  </bean>
+  
+<!--   <bean id="c2" class="com.ecoalis.model.Collaborateur" scope="prototype"> -->
+<!--     <property name="nom" value="Nom"/> -->
+<!--     <property name="prenom" value="Prenom"/> -->
+<!--   </bean> -->
+
+  <bean id="periode" class="com.ecoalis.model.Periode" scope="prototype">
+    <property name="dateDebut" value="22-01-2022"/>
+    <property name="nbJours" value="2"/>
+  </bean>
+
+  <bean id="demandeCongeSansModificateurs" class="com.ecoalis.model.DemandeCongeSansModificateurs">
+  </bean>
+  
+</beans>
