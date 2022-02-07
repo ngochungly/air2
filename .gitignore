@@ -6,6 +6,7 @@ AopExample2/
 JpaExample/
 Servers/
 Servers2/
+SpringSecurity1/
 tp1/.settings/
 tp2/.settings/
 tp3/.settings/
@@ -14,3 +15,5 @@ tp5/.settings/
 tp5/target/
 tp7/.settings/
 tp7/target/
+tp8/.settings/
+tp8/target/
